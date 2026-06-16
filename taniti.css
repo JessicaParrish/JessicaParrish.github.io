@@ -57,10 +57,6 @@ body {
   display: block;
 }
 
-.dropdown-content li a:hover {
-  background-color: #f1f1f1;
-}
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -182,8 +178,11 @@ ul {
 }
 
 .designTimeline {
-    display: flex;
-    justify-content: center;
+    max-width: 1733px;
+    width: 90%;        
+    height: auto;
+    display: block;
+    margin: 5vh auto;
 }
 
 .understand {
@@ -333,13 +332,8 @@ ul {
     margin: 5vh auto;
 }
 
-.finalDesktop {
-    display: flex;
-    justify-content: center;
-}
-
 .finalImage {
-    max-width: 798px; 
+    max-width: 774px; 
     width: 90%;       
     height: auto;
     display: inline;
@@ -416,19 +410,20 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 5vh 0;
-    gap: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
 }
 
 .arrowHeading {
     font-family: 'Alata', sans-serif;
-    font-size: 1.5em;
-    color: #333;   
+    font-size: clamp(1.25em, 2vw, 2.5em);
+    color: #333;
 }
 
 .orangeArrow {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   
 }
 
@@ -437,6 +432,8 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .contactHeading {
@@ -532,6 +529,18 @@ ul {
         color: #5b2d8e;
     }
 
+    .navMenu a:hover {
+        color: #9800ac;
+    }
+
+    .dropdown-content {
+        border-radius: 20px;
+        top: 90%;
+        left: -20vw;
+        width: 38vw;
+        font-size: clamp(1.25em, 1.75vw, 2em);
+    }
+
     .mobileRevisions {
         display: block;
         justify-content: center;
@@ -549,4 +558,38 @@ ul {
         height: auto;
         margin: 5vh 0;
     }
+
+    .arrowSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3vh 0;
+        gap: 3vw;
+    }
+
+    .orangeArrow {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+    .arrowSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3vh 0;
+        gap: 3vw;
+    }
+
+    .orangeArrow {
+        width: 100px;
+        height: 100px;
+    }
+
+
 }
