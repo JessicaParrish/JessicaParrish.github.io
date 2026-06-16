@@ -19,6 +19,7 @@ body {
     font-family: 'Alata', sans-serif;
     font-size: clamp(1rem, 2.5vw, 2rem);
     display: flex;
+    color: #5b2d8e;
     justify-content: space-between;
     align-items: center;
     width: clamp(15vw, 30vw, 50vw);
@@ -51,14 +52,10 @@ body {
 
 
 .dropdown-content li a {
-  color: #333;
+  color: #5b2d8e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
-
-.dropdown-content li a:hover {
-  background-color: #f1f1f1;
 }
 
 .hamburger {
@@ -104,7 +101,7 @@ a:visited {
     left: 39%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em;
+    font-size: clamp(2em, 2.5vw, 3em);
 }
 
 .heroText {
@@ -113,7 +110,8 @@ a:visited {
     left: 51%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2em;
+    font-size: clamp(1.5em, 2vw, 2.5em);
+    width: clamp(70vw, auto, auto);
 }
 
 .projectSection {
@@ -132,8 +130,6 @@ a:visited {
 }
 
 .projectCard1 {
-    width: 100%;
-    max-width: 800px;
     background-color: #FC7217;
     border-radius: 20px;
     padding: 1rem;
@@ -220,8 +216,6 @@ a:visited {
 }
 
 .projectCard2 {
-    width: 100%;
-    max-width: 800px;
     background-color: #0089A1;
     border-radius: 20px;
     padding: 1rem;
@@ -234,8 +228,6 @@ a:visited {
 }
 
 .projectCard3 {
-    width: 100%;
-    max-width: 800px;
     background-color: #94B35C;
     border-radius: 20px;
     padding: 1rem;
@@ -252,19 +244,20 @@ a:visited {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 5vh 0;
-    gap: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
 }
 
 .arrowHeading {
     font-family: 'Alata', sans-serif;
-    font-size: 1.5em;
-    color: #333;   
+    font-size: clamp(1.25em, 2vw, 2.5em);
+    color: #333;
 }
 
 .orangeArrow {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   
 }
 
@@ -273,6 +266,8 @@ a:visited {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .contactHeading {
@@ -353,14 +348,148 @@ a:visited {
         top: 5vh;
         right: 0;
         background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 5%;
+        border-radius: 20px;
         flex-direction: column;
         padding: 1rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        line-height: 2;
+        line-height: 4;
     }
 
     .navMenu a {
         color: #5b2d8e;
     }
+
+    .navMenu a:hover {
+        color: #9800ac;
+    }
+
+    .dropdown-content {
+        border-radius: 20px;
+        top: 90%;
+        left: -20vw;
+        width: 38vw;
+        font-size: clamp(1.25em, 1.75vw, 2em);
+    }
+
+    .heroHeading {
+        color: white;
+        width: 70vw;
+        top: 35%;
+        left: 50%;
+    }
+
+    .heroText {
+        color: white;
+        width: 70vw;
+    }
+
+    .sectionHeading {
+        margin-top: -5vh;
+    }
+
+    .projectSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
+
+    .titles {
+        width: auto;
+    }
+
+    .projectCard1 {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .projectCard2 {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .projectCard3 {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .arrowSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3vh 0;
+        gap: 3vw;
+    }
+
+    .arrowHeading {
+        font-family: 'Alata', sans-serif;
+        color: #333;   
+    }
+
+    .orangeArrow {
+        width: 100px;
+        height: 100px;
+    
+    }
+
+    .arrows {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media (min-width:768px) and (max-width: 1024px) {
+
+    .heroHeading {
+        color: white;
+        width: 70vw;
+        top: 35%;
+        left: 50%;
+    }
+
+    .heroText {
+        color: white;
+        width: 72vw;
+    }
+
+    .titles {
+        width: 50vw;
+    }
+
+    .sectionHeading {
+        margin-top: -2vh;
+    }
+
+    .arrowSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3vh 0;
+        gap: 3vw;
+    }
+
+    .arrowHeading {
+        font-family: 'Alata', sans-serif;
+        
+        color: #333;   
+    }
+
+    .orangeArrow {
+        width: 100px;
+        height: 100px;
+    
+    }
+
+    .arrows {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
