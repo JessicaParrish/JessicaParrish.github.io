@@ -382,14 +382,6 @@ a:visited {
         padding: 2vh 2vw;
     }
 
-    .dropdown:hover .dropdown-content {
-        display: none;
-    }
-
-    .dropdown-content.open {
-        display: block;
-    }
-
     .heroHeading {
         color: white;
         width: 70vw;
