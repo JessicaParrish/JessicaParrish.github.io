@@ -17,7 +17,7 @@ body {
 .navMenu {
     display: inline-block;
     font-family: 'Alata', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,53 +25,62 @@ body {
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  top: 90%;
-  left: 0;
-  list-style: none;
-  padding: 0 10px;
-  margin-top: 0vh;
-  width: 15vw;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    top: 90%;
+    left: 0;
+    list-style: none;
+    padding: 0 10px;
+    margin-top: 0vh;
+    width: 15vw;
+    border-radius: 20px;
+    font-size: 1.25em;
 }
 
-/* Position the dropdown menu correctly */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 
 .dropdown-content li a {
-  color: #333;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: #94B35C;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: .75em;
+}
+
+.navMenu a {
+    color: #94B35C;
+}
+
+.navMenu a:hover {
+    color: #466432;;
 }
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: white;
-  transition: transform 0.3s, opacity 0.3s;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 a {
@@ -103,7 +112,7 @@ h1 {
 h2 {
     color: #94B35C;
     font-family: 'Arima', sans-serif;    
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: 2.25em;
     text-align: center; 
 }
 
@@ -122,39 +131,52 @@ h2 {
 .finalLinks {
     font-size: clamp(.5rem, 2.5vw, 1.5rem);
     font-family: 'Arima', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     color: #FFFFFF;
     background-color: #94B35C;
     margin: 5vh auto;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     display:block;
     text-align: center;
     padding: 1vh 1vw;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-.beforeAfter {
-    width: 50vw;
+.finalLinks:visited {
+    color: #fcffec;
+}
+
+.finalLinks:hover {
+    color: #d3d6d1;
+}
+
+.beforeAfterGrid {
+    max-width: 1280px;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 5vh auto;
 }
 
 
 h3 {
     color: black;
     font-family: 'Arima', sans-serif;    
-    font-size: clamp(.75rem, 2.5vw, 1.75rem);
+    font-size: 2em;
     text-align: left;
 }
 
 h4 {
     color: black;
     font-family: 'Arima', sans-serif;    
-    font-size: clamp(.5rem, 2vw, 1.25rem);
+    font-size: 1.25em;
     text-align: left;
 }
 
 p {
     color: black;
     font-family: 'Arima', sans-serif;    
-    font-size: clamp(.5rem, 2vw, 1.25rem);
+    font-size: 1.25em;
     text-align: left;
     line-height: 1.5;
 }
@@ -162,7 +184,7 @@ p {
 ul {
     color: black;
     font-family: 'Arima', sans-serif;    
-    font-size: clamp(.5rem, 2vw, 1.25rem);
+    font-size: 1.25em;
     text-align: left;
     line-height: 1.5;
 }
@@ -178,8 +200,10 @@ ul {
 }
 
 .designProcess img {
-    width: 60vw;
-    height: auto;
+    max-width: 851px;
+    width: 100%; 
+    display: block;
+    margin: 5vh auto;
 }
 
 .understand {
@@ -232,20 +256,21 @@ ul {
 .wireframeLinks {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-family: 'Arima', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     color: #FFFFFF;
     background-color: #94B35C;
     padding: 2vh 5vw;
     margin: 5vh auto;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .wireframeLinks:visited {
-    color: #94B35C;
+    color: #ffffff;
 }
 
 .wireframeLinks:hover {
-    color: #FDF8E1;
+    color: #d3d6d1;
 }
 
 .beforeAfter {
@@ -498,6 +523,7 @@ ul {
         margin-top: 5vh;
         padding: 1rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        width: 50vw;
     }
 
     .navMenu.open { 
@@ -505,28 +531,94 @@ ul {
         position: absolute;
         top: 5vh;
         right: 0;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 5%;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
         flex-direction: column;
         padding: 1rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        line-height: 2;
+        line-height: 4;
     }
 
     .navMenu a {
-        color: #5b2d8e;
+        color: #94B35C;
     }
 
     .navMenu a:hover {
-        color: #9800ac;
+        color: #d0ff4f;
     }
 
     .dropdown-content {
         border-radius: 20px;
         top: 90%;
         left: -20vw;
-        width: 38vw;
-        font-size: clamp(1.25em, 1.75vw, 2em);
+        width: 45vw;
+        font-size: 1.25em;
+        padding: 2vh 2vw;
+    }
+
+    .projectSlogan {
+        font-size: 1.5em;
+    }
+
+    .introduction {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .overview {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .overview h3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2em;
+    }
+    .overview h4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.25em;
+    }
+    .overview p {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    .finalLinks {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-family: 'Alata', sans-serif;
+        color: #fdfff3;
+        background-color: #94B35C;
+        padding: 2vh 5vw;
+        margin: 5vh auto;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .finalLinks:visited {
+        color: #fcffec;
+    }
+
+    .finalLinks:hover {
+        color: #d3d6d1;
+    }
+
+    .beforeAfterGrid {
+        width: 80vw;
+    }
+
+    .beforeAfter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
     }
 
     .mobileRevisions {
