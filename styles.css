@@ -48,6 +48,9 @@ body {
   display: block;
 }
 
+.dropdown-content.open {
+  display: block;
+}
 
 .dropdown-content li a {
   color: #5b2d8e;
