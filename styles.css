@@ -96,8 +96,7 @@ a:visited {
 .heroImage {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, rgb(218, 146, 247), rgb(140, 157, 250));
-    background-image: url('images/background.png');
+    background: linear-gradient(135deg, rgb(122, 11, 185), rgb(218, 146, 247), rgb(140, 157, 250));
     position: relative;
     top: -10vh; 
     left: 0;
